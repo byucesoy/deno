@@ -6,7 +6,6 @@ version = "1.40.3"
 authors.workspace = true
 default-run = "deno"
 edition.workspace = true
-exclude = ["tests/testdata/npm/registry/*"]
 license.workspace = true
 repository.workspace = true
 description = "Provides the deno executable"
@@ -158,9 +157,9 @@ hyper-util.workspace = true
 once_cell.workspace = true
 os_pipe.workspace = true
 pretty_assertions.workspace = true
-test_util.workspace = true
 trust-dns-client = "=0.22.0"
 trust-dns-server = "=0.22.1"
+test_util.workspace = true
 
 [package.metadata.winres]
 # This section defines the metadata that appears in the deno.exe PE header.

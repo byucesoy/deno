@@ -30,7 +30,7 @@ members = [
   "runtime",
   "test_ffi",
   "test_napi",
-  "test_util",
+  "tests",
 ]
 exclude = ["test_util/std/hash/_wasm"]
 
@@ -49,7 +49,7 @@ deno_lockfile = "0.18.0"
 deno_media_type = { version = "0.1.1", features = ["module_specifier"] }
 deno_runtime = { version = "0.144.0", path = "./runtime" }
 napi_sym = { version = "0.66.0", path = "./cli/napi/sym" }
-test_util = { path = "./test_util" }
+test_util = { path = "./tests" }
 
 denokv_proto = "0.5.0"
 denokv_remote = "0.5.0"

@@ -11,7 +11,14 @@ repository.workspace = true
 
 [[bin]]
 name = "test_server"
-path = "src/test_server.rs"
+path = "server/test_server.rs"
+
+[[test]]
+name = "integration_tests"
+path = "integration_tests.rs"
+
+[lib]
+path = "server/lib.rs"
 
 [dependencies]
 anyhow.workspace = true
@@ -59,3 +66,22 @@ winapi = { workspace = true, features = ["consoleapi", "synchapi", "handleapi", 
 
 [build-dependencies]
 prost-build.workspace = true
+
+[dev-dependencies]
+deno_bench_util.workspace = true
+deno_core = { workspace = true, features = ["include_js_files_for_snapshotting", "unsafe_use_unprotected_platform"] }
+fastwebsockets = { workspace = true, features = ["upgrade", "unstable-split"] }
+flaky_test = "=0.1.0"
+http.workspace = true
+http-body-util.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+once_cell.workspace = true
+os_pipe.workspace = true
+pretty_assertions.workspace = true
+trust-dns-client = "=0.22.0"
+trust-dns-server = "=0.22.1"
+deno_lockfile.workspace = true
+deno_runtime = { workspace = true, features = ["include_js_files_for_snapshotting"] }
+deno_ast = { workspace = true, features = ["bundler", "cjs", "codegen", "dep_graph", "module_specifier", "proposal", "react", "sourcemap", "transforms", "typescript", "view", "visit"] }
+tower-lsp.workspace = true
