@@ -7,7 +7,7 @@ import {
   assertEquals,
   assertMatch,
   assertThrows,
-} from "../../../../test_util/std/assert/mod.ts";
+} from "../../../test_util/std/assert/mod.ts";
 
 Deno.test({
   name: "worker terminate",

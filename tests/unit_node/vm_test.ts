@@ -3,7 +3,7 @@ import { isContext, runInNewContext } from "node:vm";
 import {
   assertEquals,
   assertThrows,
-} from "../../../test_util/std/assert/mod.ts";
+} from "../../test_util/std/assert/mod.ts";
 
 Deno.test({
   name: "vm runInNewContext",

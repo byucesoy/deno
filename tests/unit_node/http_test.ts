@@ -7,12 +7,12 @@ import {
   assert,
   assertEquals,
   fail,
-} from "../../../test_util/std/assert/mod.ts";
-import { assertSpyCalls, spy } from "../../../test_util/std/testing/mock.ts";
+} from "../../test_util/std/assert/mod.ts";
+import { assertSpyCalls, spy } from "../../test_util/std/testing/mock.ts";
 
 import { gzip } from "node:zlib";
 import { Buffer } from "node:buffer";
-import { serve } from "../../../test_util/std/http/server.ts";
+import { serve } from "../../test_util/std/http/server.ts";
 import { execCode } from "../unit/test_util.ts";
 
 Deno.test("[node/http listen]", async () => {

@@ -3,7 +3,7 @@
 import {
   assert,
   assertEquals,
-} from "../../../../test_util/std/testing/asserts.ts";
+} from "../../../test_util/std/testing/asserts.ts";
 import { createSign, createVerify, sign, verify } from "node:crypto";
 import { Buffer } from "node:buffer";
 
